@@ -1,0 +1,11 @@
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: backend-config
+  namespace: book-review
+data:
+  PORT: "3001"
+  DB_HOST: "mysql"
+  DB_PORT: "3306"
+  DB_NAME: "book_review_db"
+  ALLOWED_ORIGINS: "http://a7f7ba34d042a40e1a28d25537be611f-733616926.eu-north-1.elb.amazonaws.com"
